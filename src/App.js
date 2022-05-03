@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { Footer } from "./components/Footer";
+import salle from './images/salle-2.jpg';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const styles = {
+	header: {
+		background:`url(${salle})`,
+		backgroundSize: 'fill',
+		backgroundPosition: '50% 50%',
+		textAlign: 'center',
+		minHeight: '60vh',
+		color:'white',
+		fontSize:'10vh',
+	},
 }
 
-export default App;
+export const App = () => {
+	return (
+		<div>
+			<header style={styles.header}>
+				Thevy Mahal
+			</header>
+			<Footer/>
+		</div>
+	);
+}
