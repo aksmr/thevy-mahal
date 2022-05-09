@@ -9,12 +9,7 @@ root.render(
 	<BrowserRouter>
 		<Routes>
     		<Route path="/" element={<App />} />
-    		{/* <Route path="/menus" element={<Menus />} />
-    		<Route path="/carte" element={<Carte />} />
-    		<Route path="/vins" element={<Vins />} />
-    		<Route path="/contact" element={<Contact />} /> */}
-
-    		{/* <Route path="*" element={<NoMatch />} /> */}
+    		{/* <Route path="*" element={<App />} /> */}
     	</Routes>
 	</BrowserRouter>
 );
