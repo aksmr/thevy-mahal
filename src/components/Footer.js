@@ -6,7 +6,9 @@ const styles = {
     footer:{
         backgroundColor: "#2B2B2B",
         color: textColor,
-        minHeight: '10vh',
+        minHeight: '5vh',
+        display:'grid',
+		placeItems:'center',
     },
     link: {
         textDecoration: 'none',

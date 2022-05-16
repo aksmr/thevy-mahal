@@ -1,4 +1,4 @@
-import * as React from "react";
+import { useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -20,9 +20,12 @@ const darkTheme = createTheme({
     },
   },
 });
+const stringToURL = (str_) => {
+	return(str_.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase());
+}
 
 export const Navbar = () => {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [anchorElNav, setAnchorElNav] = useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -86,7 +89,9 @@ export const Navbar = () => {
 							>
 								{pages.map((page) => (
 									<MenuItem key={page} onClick={handleCloseNavMenu}>
-										<Typography textAlign="center">{page}</Typography>
+										<Typography textAlign="center" onClick={() => window.location.href=`/#${stringToURL(page)}`}>
+											{page}
+										</Typography>
 									</MenuItem>
 								))}
 							</Menu>
@@ -115,6 +120,7 @@ export const Navbar = () => {
 									key={page}
 									onClick={handleCloseNavMenu}
 									sx={{ my: 2, color: "white", display: "block" }}
+									href={`#${stringToURL(page)}`}
 								>
 									{page}
 								</Button>
