@@ -14,6 +14,7 @@ const style = {
         color: '#d32f2f',
     },
     table: {
+        fontSize:'20px',
     },
     th: {
         textAlign:'start',

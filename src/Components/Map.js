@@ -7,12 +7,13 @@ const styles = {
         display:'grid',
 		placeItems:'center',
         minHeight: '400px',
-        background: `url(${map})`,
+        background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${map})`,
         backgroundSize: 'fill',
 		backgroundPosition: '50% 50%',
     },
     child: {
         textAlign: 'center',
+        color:'white'
     }
 };
 

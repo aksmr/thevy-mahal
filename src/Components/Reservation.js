@@ -21,7 +21,7 @@ const style = {
         color:'black'
     },
     phoneIcon: {
-        fontSize: '75',
+        fontSize: '50',
     },
     phone: {
         fontWeight: 'normal',
