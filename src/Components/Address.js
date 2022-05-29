@@ -12,7 +12,7 @@ const style = {
         fontWeight:'bold',
     },
     icon: {
-        fontSize:'50',
+        fontSize:'25',
         color: '#d32f2f',
     }
 }

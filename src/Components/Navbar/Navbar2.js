@@ -1,6 +1,6 @@
 import './Navbar.css'
 
-const listPages = ["Carte", "Menu", "Vins", "Réservation", "Accès"];
+const listPages = ["Carte", "Menu", "Vins", "Horaires", "Accès", "Réservation"];
 const stringToURL = (str_) => { return(str_.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase()); }
 
 export const Navbar2 = () => {
