@@ -1,25 +1,23 @@
-import { Footer } from "./components/Footer";
-import salle from './images/salle-2.jpg';
-
-const styles = {
-	header: {
-		background:`url(${salle})`,
-		backgroundSize: 'fill',
-		backgroundPosition: '50% 50%',
-		textAlign: 'center',
-		minHeight: '60vh',
-		color:'white',
-		fontSize:'10vh',
-	},
-}
+import { Address } from "./Components/Address";
+import { Footer } from "./Components/Footer";
+import { Header } from "./Components/Header";
+import { Horaires } from "./Components/Horaires/Horaires";
+import { Map } from "./Components/Map";
+import { Navbar } from "./Components/Navbar/Navbar";
+import { Reservation } from "./Components/Reservation";
 
 export const App = () => {
 	return (
-		<div>
-			<header style={styles.header}>
-				Thevy Mahal
-			</header>
-			<Footer/>
-		</div>
+		<>
+			<Navbar />
+			<Header />
+			<div className="map_and_resa" style={{position:'relative'}}>
+				<Map/>
+				<Address/>
+				<Reservation/>
+			</div>
+			<Horaires/>
+			<Footer />
+		</>
 	);
 }
