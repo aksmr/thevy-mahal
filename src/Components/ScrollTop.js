@@ -31,7 +31,7 @@ export const ScrollTop = () => {
     return(
         <button
             type="button"
-            class="btn btn-danger btn-floating btn-lg"
+            className="btn btn-danger btn-floating btn-lg"
             id="btn-back-to-top"
             onClick={backToTop}
             style={style.button}
