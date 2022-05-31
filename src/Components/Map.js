@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Button } from "@mui/material";
 import map from '../images/world_map.jpg';
 
 const styles = {
@@ -26,7 +25,7 @@ export const Map = () => {
 
     const mapNotVisible =
     <div style={styles.child}>
-        <Button variant="contained" onClick={handleClick} color="error">Afficher la carte</Button>
+        <button type="button" class="btn btn-danger" onClick={handleClick}>Afficher la carte</button>
         <div><em>Votre adresse IP sera envoyée à Google Maps.</em></div>
     </div>;
 
