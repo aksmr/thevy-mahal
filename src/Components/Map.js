@@ -25,7 +25,7 @@ export const Map = () => {
 
     const mapNotVisible =
     <div style={styles.child}>
-        <button type="button" class="btn btn-danger" onClick={handleClick}>Afficher la carte</button>
+        <button type="button" className="btn btn-danger" onClick={handleClick}>Afficher la carte</button>
         <div><em>Votre adresse IP sera envoyée à Google Maps.</em></div>
     </div>;
 
