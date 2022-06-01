@@ -1,0 +1,14 @@
+header {
+    background-size: fill;
+    background-position: 50% 50%;
+    min-height: 95vh;
+    display: grid;
+    place-items: center;
+}
+
+header span {
+    font-family: 'Kaushan Script', cursive;
+    color: white;
+    font-size:10vh;
+    text-align: center;
+}

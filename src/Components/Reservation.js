@@ -30,7 +30,7 @@ const style = {
 
 export const Reservation = () => {
     return(
-        <div style={style.parent} id="reservation">
+        <div className='section' style={style.parent} id="reservation">
             <h1 style={style.h1}>
                 Faites votre<br/>
                 <strong style={style.strong}>Réservation</strong>

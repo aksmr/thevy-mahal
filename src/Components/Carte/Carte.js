@@ -1,7 +1,7 @@
 export const Carte = () => {
     return (
         <>
-            <div>
+            <div className='section' id='carte'>
                 <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                     Notre Carte
                 </a>

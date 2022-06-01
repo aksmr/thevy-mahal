@@ -2,7 +2,7 @@ import './Horaires.css'
 
 export const Horaires = () => {
     return (
-        <div className="horairesParent" id="horaires">
+        <div className="horairesParent section" id="horaires">
             <h1>
                 Nos
                 <br />

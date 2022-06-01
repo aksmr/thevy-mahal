@@ -4,12 +4,10 @@ const listPages = ["Carte", "Menu", "Boissons", "Accès", "Réservation", "Horai
 const stringToURL = (str_) => { return (str_.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase()); }
 
 export const Navbar = () => {
-
-
     return (
-        <nav className="navbar navbar-expand-lg sticky-top navbar-dark">
+        <nav className="navbar navbar-expand-lg sticky-top navbar-dark" id="custom_navbar">
             <div className="container-lg">
-                <a className="navbar-brand" href="/">{`Thevy Mahal`.toUpperCase()}</a>
+                <a className="navbar-brand" href="/">Thevy Mahal</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>

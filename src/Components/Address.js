@@ -19,7 +19,7 @@ const style = {
 
 export const Address = () => {
     return(
-        <div style={style.parent}>
+        <div className='section' id='address' style={style.parent}>
             <LocationOnIcon style={style.icon} />
             <br/>
             {"246 avenue du Président Wilson, 93210 Saint-Denis".toUpperCase()}, France

@@ -35,7 +35,7 @@ export const Map = () => {
     </>;
 
     return(
-        <div style={styles.parent} id="acces">
+        <div className='section' style={styles.parent} id="acces">
             { validate ? mapVisible : mapNotVisible}
         </div>
     );

@@ -16,3 +16,8 @@ nav {
       linear-gradient(90deg, #4b0909, #4b0909);
    background-size: 142px 142px;
 }
+
+.navbar-brand {
+   font-family: 'Kaushan Script', cursive;
+   text-transform: uppercase;
+}
