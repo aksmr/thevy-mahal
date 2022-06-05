@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './Carte.css';
 
 const stringToKey = (str_) => { return (str_.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replaceAll(" ", "_").replaceAll(",", "")); }
@@ -17,35 +18,31 @@ const carte = {
 
 export const Carte = () => {
 
+    const [isOpen, setOpen] = useState(false)
+
     return (
-        <details>
-            <summary>Notre Carte</summary>
+        <details id='dCarte'>
+            <summary className='sCarte' title='Dérouler la carte...' onClick={() => setOpen(!isOpen)}>{isOpen ? '⬇️' : '➡️'} Notre Carte {isOpen ? '⬇️' : '⬅️'}</summary>
             <div id='carte' className="container">
                 <div className='row'>
                     <div className="grid_item col-md-6 col-sm-12" id="grid_entrees" style={{backgroundColor:`rgb(${random()},${random()},${random()})`}}>
                         <h3>Entrées</h3>
-                        <ul>
-                        {carte.entrees.map((entree) => (
-                            <li key={stringToKey(entree)}>{entree}</li>
-                        ))}
-                        </ul>
+                    {carte.entrees.map((entree) => (
+                        <div key={stringToKey(entree)}>{entree}</div>
+                    ))}
                     </div>
                     <div className='col-md-6 col-sm-12'>
                         <div className="grid_item" id="grid_salades" style={{backgroundColor:`rgb(${random()},${random()},${random()})`}}>
                             <h3>Salades</h3>
-                            <ul>
-                            {carte.salades.map((salade) => (
-                                <li key={stringToKey(salade)}>{salade}</li>
-                            ))}
-                            </ul>
+                        {carte.salades.map((salade) => (
+                            <div key={stringToKey(salade)}>{salade}</div>
+                        ))}
                         </div>
                         <div className="grid_item" id="grid_pains" style={{backgroundColor:`rgb(${random()},${random()},${random()})`}}>
                             <h3>Pains</h3>
-                            <ul>
-                            {carte.pains.map((pain) => (
-                                <li key={stringToKey(pain)}>{pain}</li>
-                            ))}
-                            </ul>
+                        {carte.pains.map((pain) => (
+                            <div key={stringToKey(pain)}>{pain}</div>
+                        ))}
                         </div>
                     </div>
                 </div>
@@ -53,58 +50,46 @@ export const Carte = () => {
                 <div className='row'>
                     <div className="grid_item col-md-4 col-sm-12" id="grid_poissons" style={{backgroundColor:`rgb(${random()},${random()},${random()})`}}>
                         <h3>Poissons <em>(crustacés)</em></h3>
-                        <ul>
-                        {carte.poissons.map((poisson) => (
-                            <li key={stringToKey(poisson)}>{poisson}</li>
-                        ))}
-                        </ul>
+                    {carte.poissons.map((poisson) => (
+                        <div key={stringToKey(poisson)}>{poisson}</div>
+                    ))}
                         <div><em>Accompagnement avec du riz Basmati safrané...</em></div>
                     </div>
                     <div className="grid_item col-md-4 col-sm-12" id="grid_poulet" style={{backgroundColor:`rgb(${random()},${random()},${random()})`}}>
                         <h3>Poulet</h3>
-                        <ul>
-                        {carte.poulets.map((poulet) => (
-                            <li key={stringToKey(poulet)}>{poulet}</li>
-                        ))}
-                        </ul>
+                    {carte.poulets.map((poulet) => (
+                        <div key={stringToKey(poulet)}>{poulet}</div>
+                    ))}
                     </div>
                     <div className="grid_item col-md-4 col-sm-12" id="grid_agneau_boeuf" style={{backgroundColor:`rgb(${random()},${random()},${random()})`}}>
                         <h3>Agneau/Bœuf</h3>
-                        <ul>
-                        {carte.agneaus_boeufs.map((agneau_boeuf) => (
-                            <li key={stringToKey(agneau_boeuf)}>{agneau_boeuf}</li>
-                        ))}
-                        </ul>
+                    {carte.agneaus_boeufs.map((agneau_boeuf) => (
+                        <div key={stringToKey(agneau_boeuf)}>{agneau_boeuf}</div>
+                    ))}
                     </div>
                 </div>
 
                 <div className='row'>
                     <div className="grid_item col-12" id="grid_legumes" style={{backgroundColor:`rgb(${random()},${random()},${random()})`}}>
                         <h3>Légumes</h3>
-                        <ul>
-                        {carte.legumes.map((legume) => (
-                            <li key={stringToKey(legume)}>{legume}</li>
-                        ))}
-                        </ul>
+                    {carte.legumes.map((legume) => (
+                        <div key={stringToKey(legume)}>{legume}</div>
+                    ))}
                     </div>
                 </div>
 
                 <div className='row'>
                     <div className="grid_item col-md-6 col-sm-12" id="grid_biriani" style={{backgroundColor:`rgb(${random()},${random()},${random()})`}}>
                         <h3>Biriani</h3>
-                        <ul>
-                        {carte.birianis.map((biriani) => (
-                            <li key={stringToKey(biriani)}>{biriani}</li>
-                        ))}
-                        </ul>
+                    {carte.birianis.map((biriani) => (
+                        <div key={stringToKey(biriani)}>{biriani}</div>
+                    ))}
                     </div>
                     <div className="grid_item col-md-6 col-sm-12" id="grid_riz" style={{backgroundColor:`rgb(${random()},${random()},${random()})`}}>
                         <h3>Riz</h3>
-                        <ul>
-                        {carte.riz.map((rizItem) => (
-                            <li key={stringToKey(rizItem)}>{rizItem}</li>
-                        ))}
-                        </ul>
+                    {carte.riz.map((rizItem) => (
+                        <div key={stringToKey(rizItem)}>{rizItem}</div>
+                    ))}
                     </div>
                 </div>
             </div>

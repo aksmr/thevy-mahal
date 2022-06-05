@@ -1,0 +1,13 @@
+.sCarte {
+    list-style: none;
+    text-align: center;
+    font-size: 7vh;
+}
+
+.sCarte::-webkit-details-marker {
+    display: none;
+}
+
+.grid_item {
+    text-align: center;
+}
