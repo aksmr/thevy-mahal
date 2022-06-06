@@ -1,0 +1,29 @@
+#reservation {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    min-height: 400px;
+    box-sizing: border-box;
+    padding-top: 40px;
+    color: white;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../images/open.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+}
+#reservation > h1 {
+    font-size: 7vh;
+}
+
+#reservation > h1 > strong {
+    color: #d32f2f;
+}
+
+#reservation > a {
+    text-decoration: none;
+    color: white;
+}
+
+h3 {
+    font-weight: normal;
+}

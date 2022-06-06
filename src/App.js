@@ -5,7 +5,7 @@ import { Header } from "./Components/Header/Header";
 import { Horaires } from "./Components/Horaires/Horaires";
 import { Map } from "./Components/Map";
 import { Navbar } from "./Components/Navbar/Navbar";
-import { Reservation } from "./Components/Reservation";
+import { Reservation } from "./Components/Reservation/Reservation";
 import { ScrollTop } from "./Components/ScrollTop";
 
 export const App = () => {
