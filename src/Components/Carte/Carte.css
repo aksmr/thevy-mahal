@@ -1,5 +1,12 @@
+#dCarte {
+    min-height: 20vh;
+    padding: 5vh;
+    display: grid;
+    place-items: center stretch;
+}
+
 .sCarte {
-    list-style: none;
+    /* list-style: none; */
     text-align: center;
     font-size: 7vh;
 }
@@ -10,4 +17,10 @@
 
 .grid_item {
     text-align: center;
+    display: grid;
+    place-items: center stretch;
+}
+
+.grid_item > h3 {
+    font-weight: bold;
 }

@@ -6,7 +6,7 @@ header {
     place-items: center;
 }
 
-header span {
+header > span {
     font-family: 'Kaushan Script', cursive;
     color: white;
     font-size:10vh;
