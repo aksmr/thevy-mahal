@@ -1,3 +1,4 @@
+import { Menu } from "./Components/Menu/Menu";
 import { Address } from "./Components/Address";
 import { Carte } from "./Components/Carte/Carte";
 import { Footer } from "./Components/Footer";
@@ -14,13 +15,14 @@ export const App = () => {
 			<ScrollTop/>
 			<Navbar />
 			<Header />
-			<Carte/>
+			<Carte />
+			<Menu />
 			<div className="map_and_resa" style={{position:'relative'}}>
-				<Map/>
-				<Address/>
-				<Reservation/>
+				<Map />
+				<Address />
+				<Reservation />
 			</div>
-			<Horaires/>
+			<Horaires />
 			<Footer />
 		</>
 	);

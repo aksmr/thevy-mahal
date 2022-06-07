@@ -23,7 +23,10 @@ export const Carte = () => {
     return (
         <div id='dCarte'>
             <details>
-                <summary className='sCarte' title='Dérouler la carte...' onClick={() => setOpen(!isOpen)}>Notre Carte</summary>
+                <summary className='sCarte' title='Dérouler la carte...' onClick={() => setOpen(!isOpen)}>
+                    <span>La Carte</span><br/>
+                    <em>Cliquer pour {isOpen ? "fermer" : "dérouler"}...</em>
+                </summary>
                 <div id='carte' className="container">
                     <div className='row'>
                         <div className="grid_item col-md-7 col-sm-12 shadow-lg p-3 mb-5 bg-body rounded" id="grid_entrees">
@@ -48,8 +51,12 @@ export const Carte = () => {
                         </div>
                     </div>
                     
+                    {/* <div className='row'>
+                        <div className="grid_item grid_item col-12 shadow-none p-3 mb-5 bg-light rounded" id="grid_poissons">Nos Plats</div>
+                    </div> */}
+
                     <div className='row'>
-                        <div className="grid_item grid_item col-md-3 col-sm-12 shadow-lg p-3 mb-5 bg-body rounded" id="grid_poissons">
+                        <div className="grid_item col-md-3 col-sm-12 shadow-lg p-3 mb-5 bg-body rounded" id="grid_poissons">
                             <h3>Poissons <em>(crustacés)</em></h3><br/>
                         {carte.poissons.map((item) => (
                             <div key={stringToKey(item)}>{item}</div>

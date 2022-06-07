@@ -1,23 +1,19 @@
-#dCarte {
+#dMenu {
     min-height: 20vh;
     padding: 3vh;
     display: grid;
     place-items: center stretch;
 }
 
-.sCarte {
+.sMenu {
     /* list-style: none; */
     text-align: center;
     font-size: 7vh;
 }
 
-.sCarte > em {
+.sMenu > em {
     font-size: 3vh;
 }
-
-/* .sCarte::-webkit-details-marker {
-    display: none;
-} */
 
 .grid_item {
     text-align: center;
