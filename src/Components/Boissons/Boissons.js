@@ -4,7 +4,7 @@ import './Boissons.css';
 const stringToKey = (str_) => { return (str_.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replaceAll(" ", "_").replaceAll(",", "")); }
 const boissons = {
     champagne: ["Cru Charles Chantrain"],
-    blanc: ["Viognier vin de pays d'oc","Muscadet sevre et maine","Groover's <em>(vin de l'Inde)</em>"],
+    blanc: [["Viognier vin de pays d'oc",""],["Muscadet sevre et maine",""],["Groover's","(vin de l'Inde)"]],
     rose: [["Cote de Provence","(cros d'aimar)"],["Pinot Noir","(cave de Turckheim)"], ["Tavel Groover's","(vin de l'Inde)"],["Coteau du Languedoc"]],
     rouge: [["Merlot","(vins de pays d'oc)"],["Cote du Rhone","(les pierres)"],["Gamay","(domaine bellevue)"],["Saumur Champigny","(domaines les maribelles)"],["Bordeaux","(château belleveu lugagnac)"],["Groover's","(vin de l'Inde)"],["Beaujolais Villages",""]],
     pichet: ["Rouge","Rose","Blanc"],
@@ -44,7 +44,7 @@ export const Boissons = () => {
                         <div className='grid_item col-md-3 col-sm-12 offset-md-1 offset-sm-0 shadow-lg p-3 mb-5 bg-body rounded' id="grid_blanc">
                             <h3>Vins Blancs</h3><br/>
                         {boissons.blanc.map((item) => (
-                            <div key={stringToKey(item)}>{item}</div>
+                            <div key={stringToKey(item[0])}>{item[0]} <em>{item[1]}</em></div>
                         ))}
                         </div>
                     </div>
@@ -57,7 +57,7 @@ export const Boissons = () => {
                         ))}
                         </div>
                         <div className="grid_item col-md-6 col-sm-12 offset-md-1 offset-sm-0 shadow-lg p-3 mb-5 bg-body rounded" id="grid_pichet">
-                            <h3>Pichets</h3><br/>
+                            <h3>Pichets <small><em>(25cL - 50cL)</em></small></h3><br/>
                         {boissons.pichet.map((item) => (
                             <div key={stringToKey(item)}>{item}</div>
                         ))}
