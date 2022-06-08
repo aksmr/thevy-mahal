@@ -1,4 +1,4 @@
-#dCarte {
+#carte {
     min-height: 20vh;
     padding: 3vh;
     display: grid;
@@ -6,7 +6,6 @@
 }
 
 .sCarte {
-    /* list-style: none; */
     text-align: center;
     font-size: 7vh;
 }

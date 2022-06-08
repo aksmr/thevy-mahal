@@ -19,15 +19,16 @@ const carte = {
 export const Carte = () => {
 
     const [isOpen, setOpen] = useState(false)
+    const handleOpen = () => setOpen(!isOpen)
 
     return (
-        <div id='dCarte'>
+        <div id='carte'>
             <details>
-                <summary className='sCarte' title='Dérouler la carte...' onClick={() => setOpen(!isOpen)}>
+                <summary className='sCarte' title='Dérouler la carte...' onClick={handleOpen}>
                     <span>La Carte</span><br/>
                     <em>Cliquer pour {isOpen ? "fermer" : "dérouler"}...</em>
                 </summary>
-                <div id='carte' className="container">
+                <div className="container">
                     <div className='row'>
                         <div className="grid_item col-md-7 col-sm-12 shadow-lg p-3 mb-5 bg-body rounded" id="grid_entrees">
                             <h3>Entrées</h3><br/>

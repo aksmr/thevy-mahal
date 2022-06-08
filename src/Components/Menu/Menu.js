@@ -41,14 +41,16 @@ const menu = {
 
 export const Menu = () => {
     const [isOpen, setOpen] = useState(false);
+    const handleOpen = () => setOpen(!isOpen)
+    
     return(
-        <div id='dMenu'>
+        <div id='menu'>
             <details id='detailsMenu'>
-                <summary className='sMenu' title='Dérouler le menu...' onClick={() => setOpen(!isOpen)}>
+                <summary className='sMenu' title='Dérouler le menu...' onClick={handleOpen}>
                     <span>Nos Menus</span><br/>
                     <em>Cliquer pour {isOpen ? "fermer" : "dérouler"}...</em>
                 </summary>
-                <div id='menu' className="container">
+                <div className="container">
                     <div className='row'>
                         <div className="grid_item col-md-3 col-sm-12 shadow-lg p-3 mb-5 bg-body rounded" id="grid_menu_22">
                             <h3>Menu ({menu.menu_22.prix} €)</h3>

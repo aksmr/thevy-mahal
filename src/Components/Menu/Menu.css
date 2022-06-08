@@ -1,12 +1,12 @@
-#dMenu {
+#menu {
     min-height: 20vh;
     padding: 3vh;
     display: grid;
     place-items: center stretch;
+    background-color: #f5f5f5;
 }
 
 .sMenu {
-    /* list-style: none; */
     text-align: center;
     font-size: 7vh;
 }
