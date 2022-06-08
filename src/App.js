@@ -8,6 +8,7 @@ import { Map } from "./Components/Map";
 import { Navbar } from "./Components/Navbar/Navbar";
 import { Reservation } from "./Components/Reservation/Reservation";
 import { ScrollTop } from "./Components/ScrollTop";
+import { Carousel } from "./Components/Carousel/Carousel";
 
 export const App = () => {
 	return (
@@ -23,6 +24,7 @@ export const App = () => {
 				<Reservation />
 			</div>
 			<Horaires />
+			<Carousel />
 			<Footer />
 		</>
 	);

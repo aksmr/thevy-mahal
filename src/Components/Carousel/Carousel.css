@@ -1,0 +1,12 @@
+#galerie {
+    display: grid;
+    place-items: center;
+}
+#galerie2 {
+    margin: 3vh;
+    width: 50vw;
+}
+
+#galerieTitle {
+    margin: 3vh;
+}
