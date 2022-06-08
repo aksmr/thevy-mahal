@@ -2,11 +2,13 @@ import { useState } from 'react';
 import './Boissons.css';
 
 const stringToKey = (str_) => { return (str_.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replaceAll(" ", "_").replaceAll(",", "")); }
-const boissons = {};
+const boissons = {
+    champagne: ["Cru Charles Chantrain"]
+};
 
 export const Boissons = () => {
-    const [isOpen, setOpen] = useState(false)
-    const handleOpen = () => setOpen(!isOpen)
+    const [isOpen, setOpen] = useState(false);
+    const handleOpen = () => setOpen(!isOpen);
 
     return(
         <div id='boissons'>
