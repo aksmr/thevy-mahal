@@ -1,18 +1,17 @@
 {
   "files": {
-    "main.css": "/thevy-mahal/static/css/main.b4780785.css",
+    "main.css": "/thevy-mahal/static/css/main.949631d2.css",
     "main.js": "/thevy-mahal/static/js/main.7e96f6d0.js",
     "static/media/open.jpg": "/thevy-mahal/static/media/open.eb1227324fa539e4d3e7.jpg",
     "static/media/template_restaurant.png": "/thevy-mahal/static/media/template_restaurant.e9f1e530aa123928322e.png",
-    "static/media/KaushanScript-Regular.ttf": "/thevy-mahal/static/media/KaushanScript-Regular.a668b3d996f7c50fb3fe.ttf",
     "static/media/world_map.jpg": "/thevy-mahal/static/media/world_map.87311ee455e6f066c5b6.jpg",
     "static/media/arrow_up.svg": "/thevy-mahal/static/media/arrow_up.e8619b48af31bbeb95c1bb67fe4f0929.svg",
     "index.html": "/thevy-mahal/index.html",
-    "main.b4780785.css.map": "/thevy-mahal/static/css/main.b4780785.css.map",
+    "main.949631d2.css.map": "/thevy-mahal/static/css/main.949631d2.css.map",
     "main.7e96f6d0.js.map": "/thevy-mahal/static/js/main.7e96f6d0.js.map"
   },
   "entrypoints": [
-    "static/css/main.b4780785.css",
+    "static/css/main.949631d2.css",
     "static/js/main.7e96f6d0.js"
   ]
 }
