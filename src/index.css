@@ -1,9 +1,3 @@
-@font-face {
-	font-family: "Kaushan Script";
-	src: url("./polices/Kaushan_Script/KaushanScript-Regular.ttf") format("truetype"),
-}
-
-
 body {
 	margin: 0;
 	font-family: 'Josefin Slab', serif,'Roboto', BlinkMacSystemFont, 'Segoe UI', sans-serif;
