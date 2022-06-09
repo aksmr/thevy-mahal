@@ -17,7 +17,27 @@ nav {
    background-size: 142px 142px;
 }
 
-.navbar-brand {
+#offcanvasId {
+   background-image: linear-gradient(
+         45deg,
+         rgba(187, 187, 187, 0.04) 0%,
+         rgba(187, 187, 187, 0.04) 50%,
+         rgba(86, 86, 86, 0.04) 50%,
+         rgba(86, 86, 86, 0.04) 100%
+      ),
+      linear-gradient(
+         135deg,
+         rgba(166, 166, 166, 0.04) 0%,
+         rgba(166, 166, 166, 0.04) 50%,
+         rgba(92, 92, 92, 0.04) 50%,
+         rgba(92, 92, 92, 0.04) 100%
+      ),
+      linear-gradient(90deg, #4b0909, #4b0909);
+   background-size: 142px 142px;
+   color: white;
+}
+
+.navbar-brand, .offcanvas-title {
    font-family: 'Kaushan Script', cursive;
    text-transform: uppercase;
 }
