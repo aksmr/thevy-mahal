@@ -1,6 +1,6 @@
 import './Navbar.css'
 
-const listPages = ["Carte", "Menu", "Boissons", "Accès", "Réservation", "Horaires", "Galerie"];
+const listPages = ["Carte", "Menu", "Boissons", "Accès", "Réservation", "Horaires"];
 const stringToURL = (str_) => { return (str_.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(' ', '-')); }
 
 export const Navbar = () => {
@@ -27,7 +27,7 @@ export const Navbar = () => {
             <div className="offcanvas offcanvas-start" tabIndex="-1" id="offcanvasId" aria-labelledby="offcanvasThevyMahalLabel">
                 <div className="offcanvas-header">
                     <h3 className="offcanvas-title" id="offcanvasThevyMahalLabel">Thevy Mahal</h3>
-                    <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <button type="button" className="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div className="offcanvas-body">
                     <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">

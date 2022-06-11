@@ -15,5 +15,11 @@ nav, #offcanvasId {
 }
 
 .nav-link-offcanva {
-   margin: 3vw 0px;
+   margin: 19px 0px;
+}
+
+@media screen and (max-width: 425px) {
+   #offcanvasId {
+      width: 70vw;
+   }
 }
