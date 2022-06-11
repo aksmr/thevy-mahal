@@ -26,14 +26,14 @@ export const Navbar = () => {
 
             <div className="offcanvas offcanvas-start" tabIndex="-1" id="offcanvasId" aria-labelledby="offcanvasThevyMahalLabel">
                 <div className="offcanvas-header">
-                    <h5 className="offcanvas-title" id="offcanvasThevyMahalLabel">Thevy Mahal</h5>
+                    <h3 className="offcanvas-title" id="offcanvasThevyMahalLabel">Thevy Mahal</h3>
                     <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div className="offcanvas-body">
                     <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                     {listPages.map((page) => (
                         <li className="nav-item" key={page}>
-                            <h5><a className="nav-link" aria-current="page" href={`#${stringToURL(page)}`}>{page}</a></h5>
+                            <h4><a className="nav-link nav-link-offcanva" aria-current="page" href={`#${stringToURL(page)}`}>{page}</a></h4>
                         </li>
                     ))}
                     </ul>
