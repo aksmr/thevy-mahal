@@ -9,7 +9,7 @@ const styles = {
 
 export const Header = () => {
     return(
-        <header className='section' id='header' style={styles.header}>
+        <header className='reactComponent' id='header' style={styles.header}>
             <span>Thevy<br/>Mahal</span>
         </header>
     );

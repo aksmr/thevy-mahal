@@ -22,7 +22,7 @@ export const Carte = () => {
     const handleOpen = () => setOpen(!isOpen)
 
     return (
-        <div id='carte'>
+        <div id='carte' className='reactComponent'>
             <details>
                 <summary className='sCarte' title='Dérouler la carte...' onClick={handleOpen}>
                     <span>La Carte</span><br/>

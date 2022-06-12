@@ -44,7 +44,7 @@ export const Menu = () => {
     const handleOpen = () => setOpen(!isOpen)
     
     return(
-        <div id='menu'>
+        <div id='menu' className='reactComponent'>
             <details id='detailsMenu'>
                 <summary className='sMenu' title='Dérouler le menu...' onClick={handleOpen}>
                     <span>Nos Menus</span><br/>

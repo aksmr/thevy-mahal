@@ -21,7 +21,7 @@ export const Boissons = () => {
     const handleOpen = () => setOpen(!isOpen);
 
     return(
-        <div id='boissons'>
+        <div id='boissons' className='reactComponent'>
             <details>
                 <summary className='sBoissons' title='Dérouler la liste de boissons...' onClick={handleOpen}>
                     <span>Les Boissons</span><br/>

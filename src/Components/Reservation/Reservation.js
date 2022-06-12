@@ -9,7 +9,7 @@ const style = {
 
 export const Reservation = () => {
     return(
-        <div className='section' id="reservation">
+        <div className='reactComponent' id="reservation">
             <h1>
                 Faites votre<br/>
                 <strong>Réservation</strong>
